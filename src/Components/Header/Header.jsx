@@ -20,9 +20,21 @@ function Header() {
         <>
           <nav>
             <ul className='header__nav'>
-              <li className='header__nav__item'></li>
-              <li className='header__nav__item'></li>
-              <li className='header__nav__item'></li>
+              <li className='header__nav__item'>
+                <a href='#' className='header__nav__link'>
+                  Our company
+                </a>
+              </li>
+              <li className='header__nav__item'>
+                <a href='#' className='header__nav__link'>
+                  Locations
+                </a>
+              </li>
+              <li className='header__nav__item'>
+                <a href='#' className='header__nav__link'>
+                  Contact
+                </a>
+              </li>
             </ul>
           </nav>
           {/* <div className='dark__bg'></div> */}
