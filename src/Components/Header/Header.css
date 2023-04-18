@@ -1,0 +1,41 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.1875rem 1.5rem;
+}
+
+.header__logo {
+  width: 12.625rem;
+}
+
+ul {
+  list-style: none;
+  padding: 3rem 2rem;
+}
+
+li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--clr-primary-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav {
+  background-color: var(--clr-primary-black);
+}
+
+.dark__bg {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--clr-accent-dark-grey);
+  opacity: 0.4;
+  position: absolute;
+}

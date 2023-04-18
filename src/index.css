@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+
+:root {
+  --clr-primary-peach: hsl(11, 73%, 66%);
+  --clr-primary-black: hsl(270, 3%, 11%);
+  --clr-primary-white: hsl(0, 0%, 100%);
+
+  --clr-accent-peach: hsl(11, 100%, 80%);
+  --clr-accent-dark-grey: hsl(264, 5%, 20%);
+  --clr-accent-light-grey: hsl(210, 17%, 95%);
+
+  font-family: 'Jost', sans-serif;
+  background-color: var(--clr-primary-white);
+  color: var(--clr-secondary-dark-grey);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
