@@ -15,7 +15,7 @@ function Hero() {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </m.p>
-          <m.button className='btn btn__primary'>LEARN MORE</m.button>
+          <m.button className='btn btn__primary'>Learn more</m.button>
         </m.div>
         <m.div className='hero__img'>
           <m.img src={heroImg} alt='hero' />
