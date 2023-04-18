@@ -29,6 +29,31 @@ li a {
 
 nav {
   background-color: var(--clr-primary-black);
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+header button {
+  width: 24px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__close {
+  background-image: url(../../../src/assets/shared/mobile/icon-hamburger.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu__open {
+  background-image: url(../../../src/assets/shared/mobile/icon-close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .dark__bg {

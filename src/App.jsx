@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-
-import Header from '../src/Components/Header/Header'
-import Hero from '../src/Components/Hero/Hero'
+import React from 'react'
+import Header from './Components/Header/Header'
+import Hero from './Components/Hero/Hero'
 import './App.css'
+
 function App() {
   return (
     <div className='app'>
