@@ -38,7 +38,9 @@ function Home() {
 
           <div className='companydesc__wrapper'>
             <m.CompanyDesc className={'company__card'}>
-              <img src={PassionateImg} alt='We Are Passionate' />
+              <div className='card__img__container__one'>
+                <img src={PassionateImg} alt='We Are Passionate' />
+              </div>
               <div className='company__wrapper'>
                 <h2 className='company__desc__title'>Passionate</h2>
                 <p className='company__desc__text'>
@@ -50,7 +52,9 @@ function Home() {
             </m.CompanyDesc>
 
             <m.CompanyDesc className={'company__card'}>
-              <img src={ResourcefulImg} alt='We Are Resourceful' />
+              <div className='card__img__container__two'>
+                <img src={ResourcefulImg} alt='We Are Resourceful' />
+              </div>
               <div className='company__wrapper'>
                 <h2 className='company__desc__title'>Resourceful</h2>
                 <p className='company__desc__text'>
@@ -63,7 +67,9 @@ function Home() {
             </m.CompanyDesc>
 
             <m.CompanyDesc className={'company__card'}>
-              <img src={FriendlyImg} alt='We Are Friendly' />
+              <div className='card__img__container__three'>
+                <img src={FriendlyImg} alt='We Are Friendly' />
+              </div>
               <div className='company__wrapper'>
                 <h2 className='company__desc__title'>Friendly</h2>
                 <p className='company__desc__text'>
