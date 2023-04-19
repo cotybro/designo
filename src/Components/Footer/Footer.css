@@ -28,6 +28,7 @@ footer {
   font-size: 0.875rem;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .footer__link:first-child {
