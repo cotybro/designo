@@ -27,6 +27,7 @@ footer {
   color: var(--clr-primary-white);
   font-size: 0.875rem;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .footer__link:first-child {
