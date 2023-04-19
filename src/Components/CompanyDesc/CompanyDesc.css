@@ -1,0 +1,39 @@
+.companydesc__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--clr-primary-white);
+}
+
+.company__card img {
+  background-image: url(../../assets/home/desktop/bg-pattern-hero-home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+
+.company__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-primary-white);
+  color: var(--clr-accent-dark-grey);
+}
+
+.company__card:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.company__desc__title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  margin-bottom: 2rem;
+}
+
+.company__desc__text {
+  margin-bottom: 2rem;
+}
