@@ -106,14 +106,14 @@ function WebDesign() {
         </m.DesignCard>
 
         <m.ProjectCards className={'app__design card'}>
-          <h2 className='design__card__title'>Web Design</h2>
+          <h2 className='design__card__title'>App Design</h2>
           <a href='#' className='design__card__link'>
             View Project <span className='accent__color'>&gt;</span>
           </a>
         </m.ProjectCards>
 
         <m.ProjectCards className={'graphic__design card'}>
-          <h2 className='design__card__title'>Web Design</h2>
+          <h2 className='design__card__title'>Graphic Design</h2>
           <a href='#' className='design__card__link'>
             View Project <span className='accent__color'>&gt;</span>
           </a>

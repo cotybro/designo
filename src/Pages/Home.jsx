@@ -24,14 +24,14 @@ function Home() {
             </m.ProjectCards>
 
             <m.ProjectCards className={'app__design card'}>
-              <h2 className='design__card__title'>Web Design</h2>
+              <h2 className='design__card__title'>App Design</h2>
               <a href='#' className='design__card__link'>
                 View Project <span className='accent__color'>&gt;</span>
               </a>
             </m.ProjectCards>
 
             <m.ProjectCards className={'graphic__design card'}>
-              <h2 className='design__card__title'>Web Design</h2>
+              <h2 className='design__card__title'>Graphic Design</h2>
               <a href='#' className='design__card__link'>
                 View Project <span className='accent__color'>&gt;</span>
               </a>
@@ -75,7 +75,6 @@ function Home() {
               <div className='company__wrapper'>
                 <h2 className='company__desc__title'>Friendly</h2>
                 <p className='company__desc__text'>
-                  {' '}
                   We are a group of enthusiastic folks who know how to put
                   people first. Our success depends on our customers, and we
                   strive to give them the best experience a company can provide.
