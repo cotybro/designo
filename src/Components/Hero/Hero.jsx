@@ -5,7 +5,7 @@ import heroImg from '../../assets/home/desktop/image-hero-phone.png'
 function Hero() {
   return (
     <>
-      <m.div className='hero'>
+      <div className='hero'>
         <m.div className='hero__content'>
           <m.h1 className='hero__content__title'>
             Award-winning custom designs and digital branding solutions
@@ -20,7 +20,7 @@ function Hero() {
         <m.div className='hero__img'>
           <m.img src={heroImg} alt='hero' />
         </m.div>
-      </m.div>
+      </div>
     </>
   )
 }

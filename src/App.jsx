@@ -7,6 +7,7 @@ import Home from './Pages/Home/'
 import WebDesign from './Pages/WebDesign/'
 import AppDesign from './Pages/AppDesign/'
 import GraphicDesign from './Pages/GraphicDesign/'
+import About from './Pages/About/'
 
 import './App.css'
 
@@ -17,7 +18,8 @@ function App() {
       {/* <Home /> */}
       {/* <WebDesign /> */}
       {/* <AppDesign /> */}
-      <GraphicDesign />
+      {/* <GraphicDesign /> */}
+      <About />
       <Footer />
     </div>
   )
