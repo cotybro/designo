@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion as m } from 'framer-motion'
 import Hero from '../Components/Hero/Hero'
-import DesignCards from '../Components/DesignCards/DesignCards'
+import ProjectCards from '../Components/ProjectCards/ProjectCards'
 import CompanyDesc from '../Components/CompanyDesc/CompanyDesc'
 import PassionateImg from '../assets/home/desktop/illustration-passionate.svg'
 import ResourcefulImg from '../assets/home/desktop/illustration-resourceful.svg'
@@ -14,26 +14,26 @@ function Home() {
       <div className='main'>
         <div className='design__cards__container'>
           <div className='design__card__wrapper'>
-            <m.DesignCards className={'web__design card'}>
+            <m.ProjectCards className={'web__design card'}>
               <h2 className='design__card__title'>Web Design</h2>
               <a href='#' className='design__card__link'>
                 View Project <span className='accent__color'>&gt;</span>
               </a>
-            </m.DesignCards>
+            </m.ProjectCards>
 
-            <m.DesignCards className={'app__design card'}>
+            <m.ProjectCards className={'app__design card'}>
               <h2 className='design__card__title'>Web Design</h2>
               <a href='#' className='design__card__link'>
                 View Project <span className='accent__color'>&gt;</span>
               </a>
-            </m.DesignCards>
+            </m.ProjectCards>
 
-            <m.DesignCards className={'graphic__design card'}>
+            <m.ProjectCards className={'graphic__design card'}>
               <h2 className='design__card__title'>Web Design</h2>
               <a href='#' className='design__card__link'>
                 View Project <span className='accent__color'>&gt;</span>
               </a>
-            </m.DesignCards>
+            </m.ProjectCards>
           </div>
 
           <div className='companydesc__wrapper'>

@@ -1,9 +1,9 @@
 import React from 'react'
-import './DesignCards.css'
+import './ProjectCards.css'
 import { motion as m } from 'framer-motion'
 
-function DesignCards(props) {
+function ProjectCards(props) {
   return <m.div className={props.className}>{props.children}</m.div>
 }
 
-export default DesignCards
+export default ProjectCards

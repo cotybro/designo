@@ -1,7 +1,9 @@
 import React from 'react'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
+
 import Home from './Pages/Home/'
+import WebDesign from './Pages/WebDesign/'
 
 import './App.css'
 
@@ -10,7 +12,6 @@ function App() {
     <div className='app'>
       <Header />
       <Home />
-
       <Footer />
     </div>
   )
