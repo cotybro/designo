@@ -54,7 +54,7 @@ function About() {
         </div>
         <div className='about__hero hero__accent'>
           <div className='about__hero__container'>
-            <div className='about__heroimg__wrapper'>
+            <div className='about__heroimg__wrapper`'>
               <img
                 src={RealDealImg}
                 alt='A women standing in front of a vision board'

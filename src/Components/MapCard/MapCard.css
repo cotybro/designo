@@ -1,0 +1,38 @@
+.map {
+  height: 320px;
+  width: 100%;
+}
+
+.map__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.locations__text__container {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #fdf3f0;
+  background-image: url(../../assets/shared/desktop/bg-pattern-three-circles.svg);
+}
+
+.locations__title {
+  color: var(--clr-primary-peach);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.locations__text {
+  font-size: 0.9375rem;
+  line-height: 25px;
+  color: var(--clr-accent-dark-grey);
+}
+
+.locations__text__col:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.locations__container:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
