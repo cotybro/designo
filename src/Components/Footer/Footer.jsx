@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { motion as m } from 'framer-motion'
+import GetInTouch from '../../Components/GetInTouch/GetInTouch'
 import facebook from '../../assets/shared/desktop/icon-facebook.svg'
 import twitter from '../../assets/shared/desktop/icon-twitter.svg'
 import pinterest from '../../assets/shared/desktop/icon-pinterest.svg'
@@ -10,6 +11,7 @@ import logo from '../../assets/shared/desktop/logo-light.png'
 function Footer() {
   return (
     <footer>
+      <GetInTouch />
       <div className='footer__wrapper'>
         <div className='footer__logo__container'>
           <div className='footer__logo__wrapper'>

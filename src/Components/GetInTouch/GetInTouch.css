@@ -1,0 +1,42 @@
+.get__in__touch {
+  position: absolute;
+  top: -190px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 379px;
+  background-color: var(--clr-primary-peach);
+  border-radius: 15px;
+  margin: 0 2rem;
+  background-image: url(../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+.get__in__touch__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.get__in__touch__container__top {
+  margin: 0 1.5rem 2rem;
+}
+
+.get__in__touch__title {
+  font-size: 2rem;
+  color: var(--clr-primary-white);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  line-height: 36px;
+}
+
+.get__in__touch__text {
+  font-size: 0.9375rem;
+  color: var(--clr-primary-white);
+  line-height: 25px;
+}

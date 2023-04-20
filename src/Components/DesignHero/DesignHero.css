@@ -1,0 +1,27 @@
+.designhero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  background-color: var(--clr-primary-peach);
+  color: var(--clr-primary-white);
+  text-align: center;
+  background-image: url(../../assets/web-design/desktop/bg-pattern-intro-web.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto 175%;
+}
+
+.designhero__title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.designhero__text {
+  font-size: 0.9375rem;
+  line-height: 25px;
+  margin-bottom: 1.5rem;
+  padding: 0 1.5rem;
+}
