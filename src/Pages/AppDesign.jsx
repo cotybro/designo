@@ -3,39 +3,74 @@ import { motion as m } from 'framer-motion'
 // Components
 import DesignHero from '../Components/DesignHero/DesignHero'
 import DesignCard from '../Components/DesignCard/DesignCard'
-import ProjectCards from '../Components/ProjectCards/ProjectCards'
 // Images
-import ExpressImg from '../assets/web-design/desktop/image-express.jpg'
-import TransferImg from '../assets/web-design/desktop/image-transfer.jpg'
-import PhotonImg from '../assets/web-design/desktop/image-photon.jpg'
-import BuilderImg from '../assets/web-design/desktop/image-builder.jpg'
-import BlogrImg from '../assets/web-design/desktop/image-blogr.jpg'
-import CampImg from '../assets/web-design/desktop/image-camp.jpg'
+import AirfilterImg from '../assets/app-design/desktop/image-airfilter.jpg'
+import EyecamImg from '../assets/app-design/desktop/image-eyecam.jpg'
+import FaceitImg from '../assets/app-design/desktop/image-faceit.jpg'
+import TodoImg from '../assets/app-design/desktop/image-todo.jpg'
+import LoopstudiosImg from '../assets/app-design/desktop/image-loopstudios.jpg'
 
-function WebDesign() {
+function AppDesign() {
   return (
     <>
       <DesignHero>
-        <m.h2 className='designhero__title'>Web Design</m.h2>
+        <m.h2 className='designhero__title'>App Design</m.h2>
         <m.p className='designhero__text'>
-          We build websites that serve as powerful marketing tools and bring
-          memorable brand experiences.
+          Our mobile designs bring intuitive digital solutions to your customers
+          right at their fingertips.
         </m.p>
       </DesignHero>
-
       <div className='main__design'>
         <m.DesignCard className={'designcard'}>
           <div className='designcard__img__wrapper'>
             <img
-              src={ExpressImg}
-              alt='Express Website'
+              src={AirfilterImg}
+              alt='Airfilter App'
               className='designcard__img'
             />
           </div>
           <div className='designcard__info__wrapper'>
-            <h3 className='designcard__title'>Express</h3>
+            <h3 className='designcard__title'>Airfilter</h3>
             <p className='designcard__text'>
-              A multi-carrier shipping website for ecommerce businesses
+              Solving the problem of poor indoor air quality by filtering the
+              air
+            </p>
+          </div>
+        </m.DesignCard>
+
+        <m.DesignCard className={'designcard'}>
+          <div className='designcard__img__wrapper'>
+            <img src={EyecamImg} alt='EyeCam App' className='designcard__img' />
+          </div>
+          <div className='designcard__info__wrapper'>
+            <h3 className='designcard__title'>Eyecam</h3>
+            <p className='designcard__text'>
+              Product that lets you edit your favorite photos and videos at any
+              time
+            </p>
+          </div>
+        </m.DesignCard>
+
+        <m.DesignCard className={'designcard'}>
+          <div className='designcard__img__wrapper'>
+            <img src={FaceitImg} alt='Faceit App' className='designcard__img' />
+          </div>
+          <div className='designcard__info__wrapper'>
+            <h3 className='designcard__title'>Faceit</h3>
+            <p className='designcard__text'>
+              Get to meet your favorite internet superstar with the faceit app
+            </p>
+          </div>
+        </m.DesignCard>
+
+        <m.DesignCard className={'designcard'}>
+          <div className='designcard__img__wrapper'>
+            <img src={TodoImg} alt='Todo App' className='designcard__img' />
+          </div>
+          <div className='designcard__info__wrapper'>
+            <h3 className='designcard__title'>Todo</h3>
+            <p className='designcard__text'>
+              A todo app that features cloud sync with light and dark mode
             </p>
           </div>
         </m.DesignCard>
@@ -43,70 +78,21 @@ function WebDesign() {
         <m.DesignCard className={'designcard'}>
           <div className='designcard__img__wrapper'>
             <img
-              src={TransferImg}
-              alt='Transfer Website'
+              src={LoopstudiosImg}
+              alt='Loopstudios App'
               className='designcard__img'
             />
           </div>
           <div className='designcard__info__wrapper'>
-            <h3 className='designcard__title'>Transfer</h3>
+            <h3 className='designcard__title'>Loopstudios</h3>
             <p className='designcard__text'>
-              Site for low-cost money transfers and sending money within seconds
+              A todo app that features cloud sync with light and dark mode
             </p>
           </div>
         </m.DesignCard>
 
-        <m.DesignCard className={'designcard'}>
-          <div className='designcard__img__wrapper'>
-            <img
-              src={PhotonImg}
-              alt='Photon Website'
-              className='designcard__img'
-            />
-          </div>
-          <div className='designcard__info__wrapper'>
-            <h3 className='designcard__title'>Photon</h3>
-            <p className='designcard__text'>
-              A state-of-the-art music player with high-resolution audio and DSP
-              effects
-            </p>
-          </div>
-        </m.DesignCard>
-
-        <m.DesignCard className={'designcard'}>
-          <div className='designcard__img__wrapper'>
-            <img
-              src={BuilderImg}
-              alt='Builder Website'
-              className='designcard__img'
-            />
-          </div>
-          <div className='designcard__info__wrapper'>
-            <h3 className='designcard__title'>Builder</h3>
-            <p className='designcard__text'>
-              Connects users with local contractors based on their location
-            </p>
-          </div>
-        </m.DesignCard>
-
-        <m.DesignCard className={'designcard'}>
-          <div className='designcard__img__wrapper'>
-            <img
-              src={BlogrImg}
-              alt='Blogr Website'
-              className='designcard__img'
-            />
-          </div>
-          <div className='designcard__info__wrapper'>
-            <h3 className='designcard__title'>Express</h3>
-            <p className='designcard__text'>
-              Blogr is a platform for creating an online blog or publication
-            </p>
-          </div>
-        </m.DesignCard>
-
-        <m.ProjectCards className={'app__design card'}>
-          <h2 className='design__card__title'>App Design</h2>
+        <m.ProjectCards className={'web__design card'}>
+          <h2 className='design__card__title'>Web Design</h2>
           <a href='#' className='design__card__link'>
             View Project <span className='accent__color'>&gt;</span>
           </a>
@@ -123,4 +109,4 @@ function WebDesign() {
   )
 }
 
-export default WebDesign
+export default AppDesign

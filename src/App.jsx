@@ -4,6 +4,7 @@ import Footer from './Components/Footer/Footer'
 
 import Home from './Pages/Home/'
 import WebDesign from './Pages/WebDesign/'
+import AppDesign from './Pages/AppDesign/'
 
 import './App.css'
 
@@ -12,7 +13,8 @@ function App() {
     <div className='app'>
       <Header />
       {/* <Home /> */}
-      <WebDesign />
+      {/* <WebDesign /> */}
+      <AppDesign />
       <Footer />
     </div>
   )
