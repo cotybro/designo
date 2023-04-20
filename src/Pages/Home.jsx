@@ -1,8 +1,10 @@
 import React from 'react'
 import { motion as m } from 'framer-motion'
+// Components
 import Hero from '../Components/Hero/Hero'
 import ProjectCards from '../Components/ProjectCards/ProjectCards'
 import CompanyDesc from '../Components/CompanyDesc/CompanyDesc'
+// Images
 import PassionateImg from '../assets/home/desktop/illustration-passionate.svg'
 import ResourcefulImg from '../assets/home/desktop/illustration-resourceful.svg'
 import FriendlyImg from '../assets/home/desktop/illustration-friendly.svg'

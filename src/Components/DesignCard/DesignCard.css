@@ -1,0 +1,48 @@
+.designcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fdf3f0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.designcard__img__wrapper {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.designcard__img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.designcard__info__wrapper {
+  padding: 2rem 1.875rem;
+}
+
+.designcard__title {
+  font-size: 1.25rem;
+  color: var(--clr-primary-peach);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.designcard__text {
+  color: var(--clr-accent-dark-grey);
+  line-height: 26px;
+}
+
+.designcard ~ .card:last-of-type {
+  margin-bottom: 0;
+}
+
+.designcard:last-of-type {
+  margin-bottom: 6rem;
+}
