@@ -1,10 +1,12 @@
 import React from 'react'
+// Components
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
-
+// Pages
 import Home from './Pages/Home/'
 import WebDesign from './Pages/WebDesign/'
 import AppDesign from './Pages/AppDesign/'
+import GraphicDesign from './Pages/GraphicDesign/'
 
 import './App.css'
 
@@ -14,7 +16,8 @@ function App() {
       <Header />
       {/* <Home /> */}
       {/* <WebDesign /> */}
-      <AppDesign />
+      {/* <AppDesign /> */}
+      <GraphicDesign />
       <Footer />
     </div>
   )

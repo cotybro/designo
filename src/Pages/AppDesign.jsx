@@ -20,6 +20,7 @@ function AppDesign() {
           right at their fingertips.
         </m.p>
       </DesignHero>
+
       <div className='main__design'>
         <m.DesignCard className={'designcard'}>
           <div className='designcard__img__wrapper'>
