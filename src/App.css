@@ -32,6 +32,7 @@
   padding: 6.5rem 1.5rem 18.5rem;
 }
 
-.main__locations {
+.main__locations,
+.main__contact {
   padding-bottom: 18.5rem;
 }

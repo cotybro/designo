@@ -1,0 +1,13 @@
+.contact__container {
+  height: 764px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-primary-peach);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
