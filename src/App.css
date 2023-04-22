@@ -13,6 +13,7 @@
   text-transform: uppercase;
   font-family: 'Jost', sans-serif;
   color: var(--clr-primary-black);
+  z-index: 22;
 }
 
 .btn:hover {
