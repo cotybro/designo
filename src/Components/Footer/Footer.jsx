@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 import { motion as m } from 'framer-motion'
 import GetInTouch from '../../Components/GetInTouch/GetInTouch'
@@ -18,15 +19,15 @@ function Footer() {
             <img src={logo} alt='Designo' className='footer__logo' />
           </div>
           <div className='footer__page__links'>
-            <a href='#' className='footer__link'>
+            <Link to='/about' className='footer__link'>
               Our Company
-            </a>
-            <a href='#' className='footer__link'>
+            </Link>
+            <Link to='/locations' className='footer__link'>
               Locations
-            </a>
-            <a href='#' className='footer__link'>
+            </Link>
+            <Link to='contact' className='footer__link'>
               Contact
-            </a>
+            </Link>
           </div>
 
           <div className='footer__bottom__container'>
