@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion as m } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import './Hero.css'
 import heroImg from '../../assets/home/desktop/image-hero-phone.png'
 function Hero() {
@@ -15,7 +16,9 @@ function Hero() {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </m.p>
-          <m.button className='btn btn__primary'>Learn more</m.button>
+          <Link to='/about'>
+            <m.button className='btn btn__primary'>Learn more</m.button>
+          </Link>
         </m.div>
         <m.div className='hero__img'>
           <m.img src={heroImg} alt='hero' />

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { motion as m } from 'framer-motion'
 
 // Components
@@ -11,6 +13,11 @@ import AustraliaImg from '../assets/shared/desktop/illustration-australia.svg'
 import UnitedKingdomImg from '../assets/shared/desktop/illustration-united-kingdom.svg'
 
 function Contact() {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location])
   return (
     <>
       <ContactUs />
@@ -22,7 +29,9 @@ function Contact() {
             </div>
             <div className='company__wrapper'>
               <h2 className='company__desc__title text__uppercase'>Canada</h2>
-              <button className='btn btn__accent'>see location</button>
+              <Link to='/locations#cananda'>
+                <button className='btn btn__accent'>see location</button>
+              </Link>
             </div>
           </m.CompanyDesc>
 
@@ -34,7 +43,9 @@ function Contact() {
               <h2 className='company__desc__title text__uppercase'>
                 Australia
               </h2>
-              <button className='btn btn__accent'>see location</button>
+              <Link to='/locations#australia'>
+                <button className='btn btn__accent'>see location</button>
+              </Link>
             </div>
           </m.CompanyDesc>
 
@@ -46,7 +57,9 @@ function Contact() {
               <h2 className='company__desc__title text__uppercase'>
                 United Kingdom
               </h2>
-              <button className='btn btn__accent'>see location</button>
+              <Link to='/locations#uk'>
+                <button className='btn btn__accent'>see location</button>
+              </Link>
             </div>
           </m.CompanyDesc>
         </div>

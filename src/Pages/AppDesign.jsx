@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion as m } from 'framer-motion'
+import { Link, useLocation } from 'react-router-dom'
 // Components
 import DesignHero from '../Components/DesignHero/DesignHero'
 import DesignCard from '../Components/DesignCard/DesignCard'
@@ -11,6 +12,11 @@ import TodoImg from '../assets/app-design/desktop/image-todo.jpg'
 import LoopstudiosImg from '../assets/app-design/desktop/image-loopstudios.jpg'
 
 function AppDesign() {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location])
   return (
     <>
       <DesignHero>
@@ -94,16 +100,16 @@ function AppDesign() {
 
         <m.ProjectCards className={'web__design card'}>
           <h2 className='design__card__title'>Web Design</h2>
-          <a href='#' className='design__card__link'>
+          <Link to='/web-design' className='design__card__link'>
             View Project <span className='accent__color'>&gt;</span>
-          </a>
+          </Link>
         </m.ProjectCards>
 
         <m.ProjectCards className={'graphic__design card'}>
           <h2 className='design__card__title'>Graphic Design</h2>
-          <a href='#' className='design__card__link'>
+          <Link to='/graphic-design' className='design__card__link'>
             View Project <span className='accent__color'>&gt;</span>
-          </a>
+          </Link>
         </m.ProjectCards>
       </div>
     </>

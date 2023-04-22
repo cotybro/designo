@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { motion as m } from 'framer-motion'
 
 // Components
@@ -10,9 +11,14 @@ import australiaMap from '../assets/locations/tablet/image-map-australia.png'
 import ukMap from '../assets/locations/tablet/image-map-uk.png'
 
 function Locations() {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location])
   return (
     <div className='main__locations'>
-      <MapCard className={'locations__container'}>
+      <MapCard className={'locations__container'} id='canada'>
         <div className='map'>
           <img src={canadaMap} alt='Canada Map' className='map__img' />
         </div>
@@ -31,7 +37,7 @@ function Locations() {
         </div>
       </MapCard>
 
-      <MapCard className={'locations__container'}>
+      <MapCard className={'locations__container'} id='australia'>
         <div className='map'>
           <img src={australiaMap} alt='Australia Map' className='map__img' />
         </div>
@@ -50,7 +56,7 @@ function Locations() {
         </div>
       </MapCard>
 
-      <MapCard className={'locations__container'}>
+      <MapCard className={'locations__container'} id='uk'>
         <div className='map'>
           <img src={ukMap} alt='United Kingdom Map' className='map__img' />
         </div>

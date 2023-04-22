@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation, Link } from 'react-router-dom'
 import { motion as m } from 'framer-motion'
+
 // Components
 import Hero from '../Components/Hero/Hero'
 import ProjectCards from '../Components/ProjectCards/ProjectCards'
@@ -10,6 +12,11 @@ import ResourcefulImg from '../assets/home/desktop/illustration-resourceful.svg'
 import FriendlyImg from '../assets/home/desktop/illustration-friendly.svg'
 
 function Home() {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location])
   return (
     <>
       <Hero />
@@ -18,23 +25,23 @@ function Home() {
           <div className='design__card__wrapper'>
             <m.ProjectCards className={'web__design card'}>
               <h2 className='design__card__title'>Web Design</h2>
-              <a href='#' className='design__card__link'>
+              <Link to='/web-design' className='design__card__link'>
                 View Project <span className='accent__color'>&gt;</span>
-              </a>
+              </Link>
             </m.ProjectCards>
 
             <m.ProjectCards className={'app__design card'}>
               <h2 className='design__card__title'>App Design</h2>
-              <a href='#' className='design__card__link'>
+              <Link to='/app-design' className='design__card__link'>
                 View Project <span className='accent__color'>&gt;</span>
-              </a>
+              </Link>
             </m.ProjectCards>
 
             <m.ProjectCards className={'graphic__design card'}>
               <h2 className='design__card__title'>Graphic Design</h2>
-              <a href='#' className='design__card__link'>
+              <Link to='/graphic-design' className='design__card__link'>
                 View Project <span className='accent__color'>&gt;</span>
-              </a>
+              </Link>
             </m.ProjectCards>
           </div>
 

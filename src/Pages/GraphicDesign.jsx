@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { motion as m } from 'framer-motion'
 // Components
 import DesignHero from '../Components/DesignHero/DesignHero'
@@ -9,6 +11,11 @@ import BoxedWaterImg from '../assets/graphic-design/desktop/image-boxed-water.jp
 import ScienceImg from '../assets/graphic-design/desktop/image-science.jpg'
 
 function GraphicDesign() {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location])
   return (
     <>
       <DesignHero>
@@ -64,16 +71,16 @@ function GraphicDesign() {
 
         <m.ProjectCards className={'app__design card'}>
           <h2 className='design__card__title'>App Design</h2>
-          <a href='#' className='design__card__link'>
+          <Link to='/app-design' className='design__card__link'>
             View Project <span className='accent__color'>&gt;</span>
-          </a>
+          </Link>
         </m.ProjectCards>
 
         <m.ProjectCards className={'web__design card'}>
           <h2 className='design__card__title'>Web Design</h2>
-          <a href='#' className='design__card__link'>
+          <Link to='/web-design' className='design__card__link'>
             View Project <span className='accent__color'>&gt;</span>
-          </a>
+          </Link>
         </m.ProjectCards>
       </div>
     </>

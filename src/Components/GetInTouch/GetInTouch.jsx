@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './GetInTouch.css'
 import { motion as m } from 'framer-motion'
 
@@ -16,7 +17,9 @@ function GetInTouch() {
           </p>
         </div>
         <div className='get__in__touch__container__bottom'>
-          <button className='btn btn__primary'>Get In Touch</button>
+          <Link to='/contact'>
+            <button className='btn btn__primary'>Get In Touch</button>
+          </Link>
         </div>
       </div>
     </div>

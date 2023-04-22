@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 
 // Components
@@ -19,13 +20,15 @@ function App() {
     <div className='app'>
       <Header />
 
-      <Home />
-      <WebDesign />
-      <AppDesign />
-      <GraphicDesign />
-      <About />
-      <Locations />
-      <Contact />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/web-design' element={<WebDesign />} />
+        <Route path='/app-design' element={<AppDesign />} />
+        <Route path='/graphic-design' element={<GraphicDesign />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/locations' element={<Locations />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
 
       <Footer />
     </div>
