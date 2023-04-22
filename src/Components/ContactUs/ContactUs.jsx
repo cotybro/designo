@@ -21,7 +21,7 @@ function ContactUs() {
           required
         />
         <input
-          type='text'
+          type='email'
           className='form__input'
           placeholder='Email Address'
           id='email'
@@ -37,11 +37,12 @@ function ContactUs() {
 
         <textarea
           className='form__input'
-          placeholder='Message'
+          placeholder=' Your Message'
           id='message'
           required
         ></textarea>
-        <button className='form__button'>Submit</button>
+
+        <button className='btn btn__primary'>Submit</button>
       </form>
     </div>
   )

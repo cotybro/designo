@@ -3,7 +3,7 @@ import { motion as m } from 'framer-motion'
 import './Header.css'
 import logoDark from '../../../src/assets/shared/desktop/logo-dark.png'
 
-function Header() {
+function Header({ setPage }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -37,7 +37,6 @@ function Header() {
               </li>
             </ul>
           </nav>
-          {/* <div className='dark__bg'></div> */}
         </>
       )}
     </>

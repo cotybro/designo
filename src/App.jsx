@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './App.css'
+
 // Components
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
@@ -12,19 +14,19 @@ import About from './Pages/About/'
 import Locations from './Pages/Locations'
 import Contact from './Pages/Contact'
 
-import './App.css'
-
 function App() {
   return (
     <div className='app'>
       <Header />
-      {/* <Home /> */}
-      {/* <WebDesign /> */}
-      {/* <AppDesign /> */}
-      {/* <GraphicDesign /> */}
-      {/* <About /> */}
-      {/* <Locations /> */}
+
+      <Home />
+      <WebDesign />
+      <AppDesign />
+      <GraphicDesign />
+      <About />
+      <Locations />
       <Contact />
+
       <Footer />
     </div>
   )

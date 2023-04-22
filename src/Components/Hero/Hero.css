@@ -33,4 +33,5 @@
   position: absolute;
   bottom: -300px;
   height: 100%;
+  z-index: 1;
 }
