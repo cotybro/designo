@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom'
 // Components
 import DesignHero from '../Components/DesignHero/DesignHero'
 import DesignCard from '../Components/DesignCard/DesignCard'
+import Footer from '../Components/Footer/Footer'
+
 // Images
 import AirfilterImg from '../assets/app-design/desktop/image-airfilter.jpg'
 import EyecamImg from '../assets/app-design/desktop/image-eyecam.jpg'
@@ -98,20 +100,25 @@ function AppDesign() {
           </div>
         </m.DesignCard>
 
-        <m.ProjectCards className={'web__design card'}>
-          <h2 className='design__card__title'>Web Design</h2>
-          <Link to='/web-design' className='design__card__link'>
-            View Project <span className='accent__color'>&gt;</span>
-          </Link>
-        </m.ProjectCards>
+        <Link to='/web-design'>
+          <m.ProjectCards className={'web__design card'}>
+            <h2 className='design__card__title'>Web Design</h2>
+            <p className='design__card__link'>
+              View Project <span className='accent__color'>&gt;</span>
+            </p>
+          </m.ProjectCards>
+        </Link>
 
-        <m.ProjectCards className={'graphic__design card'}>
-          <h2 className='design__card__title'>Graphic Design</h2>
-          <Link to='/graphic-design' className='design__card__link'>
-            View Project <span className='accent__color'>&gt;</span>
-          </Link>
-        </m.ProjectCards>
+        <Link to='/graphic-design'>
+          <m.ProjectCards className={'graphic__design card'}>
+            <h2 className='design__card__title'>Graphic Design</h2>
+            <p className='design__card__link'>
+              View Project <span className='accent__color'>&gt;</span>
+            </p>
+          </m.ProjectCards>
+        </Link>
       </div>
+      <Footer />
     </>
   )
 }

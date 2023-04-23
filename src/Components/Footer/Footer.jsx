@@ -16,7 +16,9 @@ function Footer() {
       <div className='footer__wrapper'>
         <div className='footer__logo__container'>
           <div className='footer__logo__wrapper'>
-            <img src={logo} alt='Designo' className='footer__logo' />
+            <Link to='/'>
+              <img src={logo} alt='Designo' className='footer__logo' />
+            </Link>
           </div>
           <div className='footer__page__links'>
             <Link to='/about' className='footer__link'>
@@ -25,7 +27,7 @@ function Footer() {
             <Link to='/locations' className='footer__link'>
               Locations
             </Link>
-            <Link to='contact' className='footer__link'>
+            <Link to='/contact' className='footer__link'>
               Contact
             </Link>
           </div>

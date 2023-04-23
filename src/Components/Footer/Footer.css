@@ -4,7 +4,11 @@ footer {
 }
 
 .footer__wrapper {
-  padding: 15.8125rem 2rem 4rem;
+  padding: 15.8125rem 1.5rem 4rem;
+}
+
+.footer__wrapper__contact {
+  padding: 4rem 1.5rem;
 }
 
 .footer__logo__wrapper {

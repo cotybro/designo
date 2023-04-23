@@ -6,6 +6,8 @@ import { motion as m } from 'framer-motion'
 import Hero from '../Components/Hero/Hero'
 import ProjectCards from '../Components/ProjectCards/ProjectCards'
 import CompanyDesc from '../Components/CompanyDesc/CompanyDesc'
+import Footer from '../Components/Footer/Footer'
+
 // Images
 import PassionateImg from '../assets/home/desktop/illustration-passionate.svg'
 import ResourcefulImg from '../assets/home/desktop/illustration-resourceful.svg'
@@ -23,26 +25,32 @@ function Home() {
       <div className='main'>
         <div className='design__cards__container'>
           <div className='design__card__wrapper'>
-            <m.ProjectCards className={'web__design card'}>
-              <h2 className='design__card__title'>Web Design</h2>
-              <Link to='/web-design' className='design__card__link'>
-                View Project <span className='accent__color'>&gt;</span>
-              </Link>
-            </m.ProjectCards>
+            <Link to='/web-design'>
+              <m.ProjectCards className={'web__design card'}>
+                <h2 className='design__card__title'>Web Design</h2>
+                <p className='design__card__link'>
+                  View Project <span className='accent__color'>&gt;</span>
+                </p>
+              </m.ProjectCards>
+            </Link>
 
-            <m.ProjectCards className={'app__design card'}>
-              <h2 className='design__card__title'>App Design</h2>
-              <Link to='/app-design' className='design__card__link'>
-                View Project <span className='accent__color'>&gt;</span>
-              </Link>
-            </m.ProjectCards>
+            <Link to='/app-design'>
+              <m.ProjectCards className={'app__design card'}>
+                <h2 className='design__card__title'>App Design</h2>
+                <p className='design__card__link'>
+                  View Project <span className='accent__color'>&gt;</span>
+                </p>
+              </m.ProjectCards>
+            </Link>
 
-            <m.ProjectCards className={'graphic__design card'}>
-              <h2 className='design__card__title'>Graphic Design</h2>
-              <Link to='/graphic-design' className='design__card__link'>
-                View Project <span className='accent__color'>&gt;</span>
-              </Link>
-            </m.ProjectCards>
+            <Link to='/graphic-design'>
+              <m.ProjectCards className={'graphic__design card'}>
+                <h2 className='design__card__title'>Graphic Design</h2>
+                <p className='design__card__link'>
+                  View Project <span className='accent__color'>&gt;</span>
+                </p>
+              </m.ProjectCards>
+            </Link>
           </div>
 
           <div className='companydesc__wrapper'>
@@ -91,6 +99,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

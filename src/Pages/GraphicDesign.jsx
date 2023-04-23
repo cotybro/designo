@@ -5,6 +5,8 @@ import { motion as m } from 'framer-motion'
 // Components
 import DesignHero from '../Components/DesignHero/DesignHero'
 import DesignCard from '../Components/DesignCard/DesignCard'
+import Footer from '../Components/Footer/Footer'
+
 // Images
 import ChangeImg from '../assets/graphic-design/desktop/image-change.jpg'
 import BoxedWaterImg from '../assets/graphic-design/desktop/image-boxed-water.jpg'
@@ -69,20 +71,25 @@ function GraphicDesign() {
           </div>
         </m.DesignCard>
 
-        <m.ProjectCards className={'app__design card'}>
-          <h2 className='design__card__title'>App Design</h2>
-          <Link to='/app-design' className='design__card__link'>
-            View Project <span className='accent__color'>&gt;</span>
-          </Link>
-        </m.ProjectCards>
+        <Link to='/app-design'>
+          <m.ProjectCards className={'app__design card'}>
+            <h2 className='design__card__title'>App Design</h2>
+            <p className='design__card__link'>
+              View Project <span className='accent__color'>&gt;</span>
+            </p>
+          </m.ProjectCards>
+        </Link>
 
-        <m.ProjectCards className={'web__design card'}>
-          <h2 className='design__card__title'>Web Design</h2>
-          <Link to='/web-design' className='design__card__link'>
-            View Project <span className='accent__color'>&gt;</span>
-          </Link>
-        </m.ProjectCards>
+        <Link to='/web-design'>
+          <m.ProjectCards className={'web__design card'}>
+            <h2 className='design__card__title'>Web Design</h2>
+            <p className='design__card__link'>
+              View Project <span className='accent__color'>&gt;</span>
+            </p>
+          </m.ProjectCards>
+        </Link>
       </div>
+      <Footer />
     </>
   )
 }

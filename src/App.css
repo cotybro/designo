@@ -44,3 +44,7 @@
 .main__contact {
   padding: 7.5rem 0;
 }
+
+a {
+  text-decoration: none;
+}

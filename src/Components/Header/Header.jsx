@@ -16,8 +16,28 @@ function Header() {
 
         <m.button
           onClick={() => setIsOpen(!isOpen)}
-          className={isOpen ? 'menu__open' : 'menu__close'}
+          className={isOpen ? 'menu__open' : 'menu__close' + ' header__menu'}
         ></m.button>
+
+        <ul className='header__nav__desktop'>
+          <li className='header__nav__item'>
+            <Link to='/about' className='header__nav__link'>
+              Our Company
+            </Link>
+          </li>
+
+          <li className='header__nav__item'>
+            <Link to='/locations' className='header__nav__link'>
+              Locations
+            </Link>
+          </li>
+
+          <li className='header__nav__item'>
+            <Link to='/contact' className='header__nav__link'>
+              Contact
+            </Link>
+          </li>
+        </ul>
       </m.header>
       {isOpen && (
         <>

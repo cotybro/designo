@@ -39,6 +39,10 @@ nav {
   z-index: 100;
 }
 
+.header__nav__desktop {
+  display: none;
+}
+
 header button {
   width: 24px;
   height: 20px;
@@ -67,4 +71,32 @@ header button {
   background-color: var(--clr-accent-dark-grey);
   opacity: 0.4;
   position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 3.125rem 2.5rem;
+  }
+
+  .header__logo {
+    width: 15.625rem;
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 3rem;
+  }
+
+  li a {
+    font-size: 0.9375rem;
+  }
+
+  header button {
+    display: none;
+  }
 }

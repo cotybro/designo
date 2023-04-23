@@ -7,6 +7,7 @@ import { motion as m } from 'framer-motion'
 import Header from '../Components/Header/Header'
 import CompanyDesc from '../Components/CompanyDesc/CompanyDesc'
 import AboutHero from '../Components/AboutHero/AboutHero'
+import Footer from '../Components/Footer/Footer'
 
 // Images
 import RealDealImg from '../assets/about/mobile/image-real-deal.jpg'
@@ -97,6 +98,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }
