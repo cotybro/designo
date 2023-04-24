@@ -25,3 +25,25 @@
   margin-bottom: 1.5rem;
   padding: 0 1.5rem;
 }
+
+@media (min-width: 768px) {
+  .designhero__container {
+    height: 252px;
+    background-size: auto 225%;
+    background-position: 50px;
+    margin: 0 40px;
+    border-radius: 15px;
+  }
+
+  .designhero__title {
+    font-size: 3rem;
+    line-height: 48px;
+    margin-bottom: 1.5rem;
+  }
+
+  .designhero__text {
+    font-size: 1rem;
+    line-height: 26px;
+    width: 450px;
+  }
+}

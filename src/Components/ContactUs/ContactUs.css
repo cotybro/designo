@@ -59,3 +59,30 @@ input:focus,
 textarea:focus {
   outline: transparent;
 }
+
+@media (min-width: 768px) {
+  .contact__container {
+    margin: 0 2.5rem;
+    border-radius: 15px;
+    padding: 4.375rem 3.75rem;
+  }
+
+  .contact__text__container {
+    text-align: left;
+  }
+
+  .contact__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact__text {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  form .btn {
+    align-self: flex-end;
+    padding: 1rem 3rem;
+  }
+}

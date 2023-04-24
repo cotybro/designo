@@ -69,8 +69,48 @@
   font-weight: 500;
   letter-spacing: 5px;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .company__desc__text {
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .company__card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 3.4375rem;
+  }
+
+  .company__card:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .company__card img {
+    margin-bottom: 0;
+  }
+
+  .company__desc__title {
+    margin-bottom: 1rem;
+  }
+
+  .company__desc__text {
+    margin-bottom: 0;
+  }
+
+  .location__card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .location__card .company__desc__title {
+    margin-bottom: 2rem;
+  }
+
+  .location__card:not(:last-child) {
+    margin-bottom: 5rem;
+  }
 }

@@ -11,7 +11,12 @@ function Header() {
     <>
       <m.header>
         <Link to='/' className='header__logo__link'>
-          <img src={logoDark} alt='DESIGNO' className='header__logo' />
+          <img
+            src={logoDark}
+            alt='DESIGNO'
+            className='header__logo'
+            onClick={() => setIsOpen(!isOpen)}
+          />
         </Link>
 
         <m.button

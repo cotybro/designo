@@ -74,29 +74,30 @@ header button {
 }
 
 @media screen and (min-width: 768px) {
-  header {
-    padding: 3.125rem 2.5rem;
-  }
-
-  .header__logo {
-    width: 15.625rem;
-  }
-
-  ul {
-    display: flex;
-    padding: 0;
-  }
-
-  li:not(:last-child) {
-    margin-bottom: 0;
-    margin-right: 3rem;
-  }
-
-  li a {
-    font-size: 0.9375rem;
-  }
-
   header button {
     display: none;
+  }
+
+  header {
+    padding: 4rem 2.5rem;
+    align-items: center;
+  }
+
+  .header__nav__desktop {
+    display: flex;
+  }
+
+  .header__nav__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .header__nav__link {
+    color: var(--clr-primary-black);
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+  }
+
+  .header__nav__item:not(:last-child) {
+    margin-right: 2.625rem;
   }
 }

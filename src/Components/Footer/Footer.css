@@ -13,13 +13,13 @@ footer {
 
 .footer__logo__wrapper {
   border-bottom: 1px solid var(--clr-accent-dark-grey);
+  padding-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
 
 .footer__logo {
   width: 202px;
-  margin-bottom: 2rem;
 }
 
 .footer__page__links {
@@ -70,4 +70,52 @@ footer {
 
 .social__icon:not(:first-child) {
   margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    padding: 10.375rem 2.5rem 5rem;
+  }
+
+  .footer__wrapper__contact {
+    padding: 5rem 2.5rem;
+  }
+
+  .footer__top__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--clr-accent-dark-grey);
+  }
+
+  .footer__page__links {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .footer__link:first-child {
+    margin-top: 0;
+  }
+
+  .footer__link:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 2.625rem;
+  }
+
+  .footer__logo__wrapper {
+    border: none;
+  }
+
+  .footer__bottom__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 1.875rem;
+  }
+
+  .footer__text {
+    margin-bottom: 0.25rem;
+  }
 }

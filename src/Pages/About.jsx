@@ -10,7 +10,6 @@ import AboutHero from '../Components/AboutHero/AboutHero'
 import Footer from '../Components/Footer/Footer'
 
 // Images
-import RealDealImg from '../assets/about/mobile/image-real-deal.jpg'
 import CanadaImg from '../assets/shared/desktop/illustration-canada.svg'
 import AustraliaImg from '../assets/shared/desktop/illustration-australia.svg'
 import UnitedKingdomImg from '../assets/shared/desktop/illustration-united-kingdom.svg'
@@ -24,42 +23,38 @@ function About() {
   return (
     <>
       <AboutHero />
-      <div className='main'>
+      <div className='main__about'>
         <div className='companydesc__wrapper'>
-          <m.CompanyDesc className={'company__card'}>
+          <m.CompanyDesc className={'company__card location__card'}>
             <div className='card__img__container__three'>
               <img src={CanadaImg} alt='Canada' />
             </div>
             <div className='company__wrapper'>
-              <h2 className='company__desc__title text__uppercase'>Canada</h2>
+              <h2 className='company__desc__title'>Canada</h2>
               <Link to='/locations'>
                 <button className='btn btn__accent'>see location</button>
               </Link>
             </div>
           </m.CompanyDesc>
 
-          <m.CompanyDesc className={'company__card'}>
+          <m.CompanyDesc className={'company__card location__card'}>
             <div className='card__img__container__one'>
               <img src={AustraliaImg} alt='Australia' />
             </div>
             <div className='company__wrapper'>
-              <h2 className='company__desc__title text__uppercase'>
-                Australia
-              </h2>
+              <h2 className='company__desc__title'>Australia</h2>
               <Link to='/locations#australia'>
                 <button className='btn btn__accent'>see location</button>
               </Link>
             </div>
           </m.CompanyDesc>
 
-          <m.CompanyDesc className={'company__card mb-7'}>
+          <m.CompanyDesc className={'company__card location__card mb-7'}>
             <div className='card__img__container__two'>
               <img src={UnitedKingdomImg} alt='United Kingdom' />
             </div>
             <div className='company__wrapper'>
-              <h2 className='company__desc__title text__uppercase'>
-                United Kingdom
-              </h2>
+              <h2 className='company__desc__title'>United Kingdom</h2>
               <Link to='/locations'>
                 <button className='btn btn__accent'>see location</button>
               </Link>
@@ -68,13 +63,7 @@ function About() {
         </div>
         <div className='about__hero hero__accent'>
           <div className='about__hero__container'>
-            <div className='about__heroimg__wrapper`'>
-              <img
-                src={RealDealImg}
-                alt='A women standing in front of a vision board'
-                className='about__heroimg'
-              />
-            </div>
+            <div className='about__heroimg__wrapper real__deal__img'></div>
             <div className='about__hero__text__container_accent'>
               <div className='about__hero__text__wrapper'>
                 <m.h2 className='about__hero__text__title title__accent'>

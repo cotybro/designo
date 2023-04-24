@@ -3,7 +3,6 @@ import Footer from '../Components/Footer/Footer'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import { motion as m } from 'framer-motion'
-
 // Components
 import ContactUs from '../Components/ContactUs/ContactUs'
 import CompanyDesc from '../Components/CompanyDesc/CompanyDesc'
@@ -30,7 +29,7 @@ function Contact() {
       <ContactUs />
       <div className='main__contact'>
         <div className='companydesc__wrapper'>
-          <m.CompanyDesc className={'company__card'}>
+          <m.CompanyDesc className={'company__card location__card'}>
             <div className='card__img__container__three'>
               <img src={CanadaImg} alt='Canada' />
             </div>
@@ -42,7 +41,7 @@ function Contact() {
             </div>
           </m.CompanyDesc>
 
-          <m.CompanyDesc className={'company__card'}>
+          <m.CompanyDesc className={'company__card location__card'}>
             <div className='card__img__container__one'>
               <img src={AustraliaImg} alt='Australia' />
             </div>
@@ -56,7 +55,7 @@ function Contact() {
             </div>
           </m.CompanyDesc>
 
-          <m.CompanyDesc className={'company__card'}>
+          <m.CompanyDesc className={'company__card location__card'}>
             <div className='card__img__container__two'>
               <img src={UnitedKingdomImg} alt='United Kingdom' />
             </div>
@@ -75,20 +74,25 @@ function Contact() {
       <footer>
         <div className='footer__wrapper__contact'>
           <div className='footer__logo__container'>
-            <div className='footer__logo__wrapper'>
-              <img src={logo} alt='Designo' className='footer__logo' />
+            <div className='footer__top__container'>
+              <div className='footer__logo__wrapper'>
+                <Link to='/'>
+                  <img src={logo} alt='Designo' className='footer__logo' />
+                </Link>
+              </div>
+              <div className='footer__page__links'>
+                <Link to='/about' className='footer__link'>
+                  Our Company
+                </Link>
+                <Link to='/locations' className='footer__link'>
+                  Locations
+                </Link>
+                <Link to='/contact' className='footer__link'>
+                  Contact
+                </Link>
+              </div>
             </div>
-            <div className='footer__page__links'>
-              <Link to='/about' className='footer__link'>
-                Our Company
-              </Link>
-              <Link to='/locations' className='footer__link'>
-                Locations
-              </Link>
-              <Link to='contact' className='footer__link'>
-                Contact
-              </Link>
-            </div>
+
             <div className='footer__bottom__container'>
               <div className='footer__bottom__col'>
                 <p className='footer__text bold'>Designo Central Office</p>

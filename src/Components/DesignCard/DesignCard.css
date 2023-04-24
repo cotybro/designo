@@ -46,3 +46,26 @@
 .designcard:last-of-type {
   margin-bottom: 6rem;
 }
+
+@media screen and (min-width: 768px) {
+  .designcard {
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .designcard:last-of-type {
+    margin-bottom: 7.5rem;
+  }
+
+  .designcard__img__wrapper {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+  }
+
+  .designcard__img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    width: 338px;
+  }
+}

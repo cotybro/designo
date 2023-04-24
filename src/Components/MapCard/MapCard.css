@@ -36,3 +36,32 @@
 .locations__container:not(:last-child) {
   margin-bottom: 2.5rem;
 }
+
+@media (min-width: 768px) {
+  .map__img {
+    border-radius: 15px;
+  }
+
+  .map {
+    margin-bottom: 2rem;
+  }
+
+  .locations__text__container {
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 4.68rem;
+  }
+
+  .locations__text__container {
+    margin-bottom: 7.5rem;
+  }
+
+  .locations__text__col:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .locations__text__col:first-child {
+    margin-right: 6.875rem;
+  }
+}

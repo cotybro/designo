@@ -15,21 +15,23 @@ function Footer() {
       <GetInTouch />
       <div className='footer__wrapper'>
         <div className='footer__logo__container'>
-          <div className='footer__logo__wrapper'>
-            <Link to='/'>
-              <img src={logo} alt='Designo' className='footer__logo' />
-            </Link>
-          </div>
-          <div className='footer__page__links'>
-            <Link to='/about' className='footer__link'>
-              Our Company
-            </Link>
-            <Link to='/locations' className='footer__link'>
-              Locations
-            </Link>
-            <Link to='/contact' className='footer__link'>
-              Contact
-            </Link>
+          <div className='footer__top__container'>
+            <div className='footer__logo__wrapper'>
+              <Link to='/'>
+                <img src={logo} alt='Designo' className='footer__logo' />
+              </Link>
+            </div>
+            <div className='footer__page__links'>
+              <Link to='/about' className='footer__link'>
+                Our Company
+              </Link>
+              <Link to='/locations' className='footer__link'>
+                Locations
+              </Link>
+              <Link to='/contact' className='footer__link'>
+                Contact
+              </Link>
+            </div>
           </div>
 
           <div className='footer__bottom__container'>

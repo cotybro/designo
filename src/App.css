@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   border: none;
   border-radius: 8px;
@@ -45,6 +49,20 @@
   padding: 7.5rem 0;
 }
 
-a {
-  text-decoration: none;
+.main__about {
+  padding: 7.5rem 0 19.375rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 7.5rem 2.5rem 20.6875rem;
+  }
+
+  .main__design {
+    padding: 7.5rem 2.5rem 24rem;
+  }
+
+  .main__locations {
+    padding: 0 2.5rem 20.6875rem;
+  }
 }
