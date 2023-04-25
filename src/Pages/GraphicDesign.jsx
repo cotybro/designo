@@ -27,67 +27,72 @@ function GraphicDesign() {
           your business objectives.
         </m.p>
       </DesignHero>
+
       <div className='main__design'>
-        <m.DesignCard className={'designcard'}>
-          <div className='designcard__img__wrapper'>
-            <img
-              src={ChangeImg}
-              alt='Change By Design'
-              className='designcard__img'
-            />
-          </div>
-          <div className='designcard__info__wrapper'>
-            <h3 className='designcard__title'>Tim Brown</h3>
-            <p className='designcard__text'>
-              A book cover designed for Tim Brown's new release, 'Change'
-            </p>
-          </div>
-        </m.DesignCard>
+        <div className='designcard__container'>
+          <m.DesignCard className={'designcard'}>
+            <div className='designcard__img__wrapper'>
+              <img
+                src={ChangeImg}
+                alt='Change By Design'
+                className='designcard__img'
+              />
+            </div>
+            <div className='designcard__info__wrapper'>
+              <h3 className='designcard__title'>Tim Brown</h3>
+              <p className='designcard__text'>
+                A book cover designed for Tim Brown's new release, 'Change'
+              </p>
+            </div>
+          </m.DesignCard>
 
-        <m.DesignCard className={'designcard'}>
-          <div className='designcard__img__wrapper'>
-            <img
-              src={BoxedWaterImg}
-              alt='Boxed Water'
-              className='designcard__img'
-            />
-          </div>
-          <div className='designcard__info__wrapper'>
-            <h3 className='designcard__title'>Boxed Water</h3>
-            <p className='designcard__text'>
-              A simple packaging concept made for Boxed Water
-            </p>
-          </div>
-        </m.DesignCard>
-        <m.DesignCard className={'designcard'}>
-          <div className='designcard__img__wrapper'>
-            <img src={ScienceImg} alt='Science' className='designcard__img' />
-          </div>
-          <div className='designcard__info__wrapper'>
-            <h3 className='designcard__title'>Science!</h3>
-            <p className='designcard__text'>
-              A poster made in collaboration with the Federal Art Project
-            </p>
-          </div>
-        </m.DesignCard>
+          <m.DesignCard className={'designcard'}>
+            <div className='designcard__img__wrapper'>
+              <img
+                src={BoxedWaterImg}
+                alt='Boxed Water'
+                className='designcard__img'
+              />
+            </div>
+            <div className='designcard__info__wrapper'>
+              <h3 className='designcard__title'>Boxed Water</h3>
+              <p className='designcard__text'>
+                A simple packaging concept made for Boxed Water
+              </p>
+            </div>
+          </m.DesignCard>
+          <m.DesignCard className={'designcard'}>
+            <div className='designcard__img__wrapper'>
+              <img src={ScienceImg} alt='Science' className='designcard__img' />
+            </div>
+            <div className='designcard__info__wrapper'>
+              <h3 className='designcard__title'>Science!</h3>
+              <p className='designcard__text'>
+                A poster made in collaboration with the Federal Art Project
+              </p>
+            </div>
+          </m.DesignCard>
+        </div>
 
-        <Link to='/app-design'>
-          <m.ProjectCards className={'app__design card'}>
-            <h2 className='design__card__title'>App Design</h2>
-            <p className='design__card__link'>
-              View Project <span className='accent__color'>&gt;</span>
-            </p>
-          </m.ProjectCards>
-        </Link>
+        <div className='design__card__container'>
+          <Link to='/app-design'>
+            <m.ProjectCards className={'app__design card card__desktop'}>
+              <h2 className='design__card__title'>App Design</h2>
+              <p className='design__card__link'>
+                View Project <span className='accent__color'>&gt;</span>
+              </p>
+            </m.ProjectCards>
+          </Link>
 
-        <Link to='/web-design'>
-          <m.ProjectCards className={'web__design card'}>
-            <h2 className='design__card__title'>Web Design</h2>
-            <p className='design__card__link'>
-              View Project <span className='accent__color'>&gt;</span>
-            </p>
-          </m.ProjectCards>
-        </Link>
+          <Link to='/web-design'>
+            <m.ProjectCards className={'web__design card card__desktop'}>
+              <h2 className='design__card__title'>Web Design</h2>
+              <p className='design__card__link'>
+                View Project <span className='accent__color'>&gt;</span>
+              </p>
+            </m.ProjectCards>
+          </Link>
+        </div>
       </div>
       <Footer />
     </>

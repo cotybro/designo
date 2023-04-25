@@ -47,3 +47,11 @@
     width: 450px;
   }
 }
+
+@media (min-width: 1000px) {
+  .designhero__container {
+    max-width: 1111px;
+    margin: 0 auto;
+    background-position: right;
+  }
+}
