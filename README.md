@@ -27,6 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
+![Designo ss](https://user-images.githubusercontent.com/36529826/234360251-8c188725-dca2-4ef3-9685-baea2edc8e0f.png)
+
 ### Links
 
 - Solution URL: [Solution here](https://github.com/cotybro/designo)
