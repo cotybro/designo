@@ -13,7 +13,7 @@ function Footer() {
   return (
     <footer>
       <GetInTouch />
-      <div className='footer__wrapper'>
+      <div className='footer__wrapper desktop__padding'>
         <div className='footer__logo__container'>
           <div className='footer__top__container'>
             <div className='footer__logo__wrapper'>

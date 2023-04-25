@@ -30,6 +30,12 @@
   opacity: 0.6;
   z-index: -1;
   border-radius: 15px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover::before {
+  background-color: var(--clr-primary-peach);
+  opacity: 0.8;
 }
 
 .card .design__card__title,
@@ -47,6 +53,7 @@
 
 .app__design {
   background-image: url('../../assets/home/mobile/image-app-design.jpg');
+  margin-top: 1.5rem;
 }
 
 .graphic__design {
@@ -97,5 +104,20 @@
   .design__card__link {
     font-size: 0.9375rem;
     letter-spacing: 5px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .web__design {
+    background-image: url(../../assets/home/desktop/image-web-design-large.jpg);
+  }
+
+  .app__design {
+    background-image: url(../../assets/home/desktop/image-app-design.jpg);
+    margin-top: 0;
+  }
+
+  .graphic__design {
+    background-image: url(../../assets/home/desktop/image-graphic-design.jpg);
   }
 }

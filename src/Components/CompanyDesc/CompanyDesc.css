@@ -114,3 +114,27 @@
     margin-bottom: 5rem;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .companydesc__wrapper {
+    flex-direction: row;
+    padding: 0 2rem;
+  }
+
+  .company__card {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 350px;
+  }
+
+  .company__card:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .company__desc__title {
+    margin-bottom: 2rem;
+  }
+}

@@ -5,7 +5,7 @@ import './Hero.css'
 import heroImg from '../../assets/home/desktop/image-hero-phone.png'
 function Hero() {
   return (
-    <>
+    <div className='desktop__padding'>
       <div className='hero'>
         <m.div className='hero__content'>
           <m.h1 className='hero__content__title'>
@@ -24,7 +24,7 @@ function Hero() {
           <m.img src={heroImg} alt='hero' />
         </m.div>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -33,24 +33,25 @@ function Home() {
                 </p>
               </m.ProjectCards>
             </Link>
+            <div className='design__card__wrapper__col'>
+              <Link to='/app-design'>
+                <m.ProjectCards className={'app__design card'}>
+                  <h2 className='design__card__title'>App Design</h2>
+                  <p className='design__card__link'>
+                    View Project <span className='accent__color'>&gt;</span>
+                  </p>
+                </m.ProjectCards>
+              </Link>
 
-            <Link to='/app-design'>
-              <m.ProjectCards className={'app__design card'}>
-                <h2 className='design__card__title'>App Design</h2>
-                <p className='design__card__link'>
-                  View Project <span className='accent__color'>&gt;</span>
-                </p>
-              </m.ProjectCards>
-            </Link>
-
-            <Link to='/graphic-design'>
-              <m.ProjectCards className={'graphic__design card'}>
-                <h2 className='design__card__title'>Graphic Design</h2>
-                <p className='design__card__link'>
-                  View Project <span className='accent__color'>&gt;</span>
-                </p>
-              </m.ProjectCards>
-            </Link>
+              <Link to='/graphic-design'>
+                <m.ProjectCards className={'graphic__design card'}>
+                  <h2 className='design__card__title'>Graphic Design</h2>
+                  <p className='design__card__link'>
+                    View Project <span className='accent__color'>&gt;</span>
+                  </p>
+                </m.ProjectCards>
+              </Link>
+            </div>
           </div>
 
           <div className='companydesc__wrapper'>

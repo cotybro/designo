@@ -67,3 +67,24 @@
     line-height: 26px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .get__in__touch {
+    height: 292px;
+    width: 94%;
+    max-width: 1111px;
+    margin: 0 auto;
+    top: -210px;
+  }
+
+  .get__in__touch__container__top {
+    align-items: flex-start;
+  }
+
+  .get__in__touch__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 6rem;
+    text-align: left;
+  }
+}

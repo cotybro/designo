@@ -17,6 +17,7 @@ header {
 ul {
   list-style: none;
   padding: 3rem 2rem;
+  padding-right: 0;
 }
 
 li:not(:last-child) {
@@ -29,6 +30,10 @@ li a {
   color: var(--clr-primary-white);
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+li a:hover {
+  text-decoration: underline;
 }
 
 nav {
@@ -99,5 +104,13 @@ header button {
 
   .header__nav__item:not(:last-child) {
     margin-right: 2.625rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    max-width: 1111px;
+    margin: 0 auto;
+    padding: 4rem 0;
   }
 }

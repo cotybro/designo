@@ -8,15 +8,10 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <>
+    <div className='desktop__padding'>
       <m.header>
         <Link to='/' className='header__logo__link'>
-          <img
-            src={logoDark}
-            alt='DESIGNO'
-            className='header__logo'
-            onClick={() => setIsOpen(!isOpen)}
-          />
+          <img src={logoDark} alt='DESIGNO' className='header__logo' />
         </Link>
 
         <m.button
@@ -79,7 +74,7 @@ function Header() {
           </nav>
         </>
       )}
-    </>
+    </div>
   )
 }
 

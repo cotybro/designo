@@ -69,3 +69,32 @@
     width: 338px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .design__card__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.875rem;
+    height: 640px;
+    margin-bottom: 9.5rem;
+  }
+
+  .web__design {
+    height: 100%;
+    width: 45vw;
+    max-width: 541px;
+  }
+
+  .app__design {
+    height: 48%;
+    width: 45vw;
+    max-width: 541px;
+  }
+
+  .graphic__design {
+    height: 48%;
+    width: 45vw;
+    max-width: 541px;
+  }
+}

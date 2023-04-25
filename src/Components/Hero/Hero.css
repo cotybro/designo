@@ -64,3 +64,42 @@
     bottom: -285px;
   }
 }
+
+@media (min-width: 1000px) {
+  .hero {
+    flex-direction: row;
+    height: 640px;
+    background-position: 700px;
+    max-width: 1111px;
+    margin: 0 auto;
+  }
+
+  .hero-wrapper {
+    padding: 0 2rem;
+  }
+
+  .hero__content {
+    width: 65%;
+    padding-left: 6rem;
+    text-align: left;
+  }
+
+  .hero__content__title {
+    font-size: 3.5rem;
+    line-height: 60px;
+  }
+
+  .hero__content__text {
+    padding: 0;
+    margin-bottom: 2.5rem;
+    max-width: 445px;
+  }
+
+  .hero__img {
+    position: absolute;
+    bottom: 35px;
+    right: -100px;
+    height: 100%;
+    z-index: -1;
+  }
+}

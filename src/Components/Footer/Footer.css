@@ -36,6 +36,10 @@ footer {
   letter-spacing: 2px;
 }
 
+.footer__link:hover {
+  text-decoration: underline;
+}
+
 .footer__link:first-child {
   margin-top: 2rem;
 }
@@ -68,8 +72,16 @@ footer {
   font-weight: 700;
 }
 
+.social__icon {
+  transition: opacity 0.3s ease-in-out;
+}
+
 .social__icon:not(:first-child) {
   margin-left: 1rem;
+}
+
+.social__icon:hover {
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -117,5 +129,14 @@ footer {
 
   .footer__text {
     margin-bottom: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer__wrapper {
+    padding: 9rem 0 4.5rem;
+    width: 94%;
+    max-width: 1111px;
+    margin: 0 auto;
   }
 }
