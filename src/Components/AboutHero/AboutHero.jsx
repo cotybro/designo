@@ -2,12 +2,17 @@ import React from 'react'
 import './AboutHero.css'
 import { motion as m } from 'framer-motion'
 
+import AboutImg from '../../assets/about/desktop/image-about-hero.jpg'
+import WorldClassImg from '../../assets/about/desktop/image-world-class-talent.jpg'
+
 function AboutHero() {
   return (
     <>
       <div className='about__hero hero__primary'>
-        <div className='about__hero__container'>
-          <div className='about__heroimg__wrapper about__img'></div>
+        <div className='about__hero__container flex__reverse'>
+          <div className='about__heroimg__wrapper about__img'>
+            <img src={AboutImg} alt='About' />
+          </div>
           <div className='about__hero__text__container'>
             <div className='about__hero__text__wrapper'>
               <m.h2 className='about__hero__text__title'>About Us</m.h2>
@@ -25,7 +30,9 @@ function AboutHero() {
       </div>
       <div className='about__hero hero__accent'>
         <div className='about__hero__container'>
-          <div className='about__heroimg__wrapper world__class__img'></div>
+          <div className='about__heroimg__wrapper world__class__img'>
+            <img src={WorldClassImg} alt='World Class Talent' />
+          </div>
           <div className='about__hero__text__container'>
             <div className='about__hero__text__wrapper'>
               <m.h2 className='about__hero__text__title title__accent'>

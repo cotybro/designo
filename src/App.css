@@ -32,6 +32,11 @@ a {
 .btn__accent {
   background-color: var(--clr-primary-peach);
   color: var(--clr-primary-white);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn__accent:hover {
+  background-color: var(--clr-accent-peach);
 }
 
 .main {
@@ -44,6 +49,8 @@ a {
 
 .main__locations {
   padding-bottom: 18.5rem;
+  max-width: 1111px;
+  margin: 0 auto;
 }
 
 .main__contact {
@@ -75,5 +82,13 @@ a {
 
   .main {
     padding: 10rem 0 25rem;
+  }
+
+  .main__about {
+    padding: 10rem 0 23.75rem;
+  }
+
+  .main__locations {
+    padding: 0 0 23.75rem;
   }
 }

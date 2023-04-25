@@ -32,19 +32,24 @@
   background-image: url(../../assets/about/mobile/image-about-hero.jpg);
 }
 
+.about__img img {
+  display: none;
+}
+
 .world__class__img {
   background-image: url(../../assets/about/mobile/image-world-class-talent.jpg);
+}
+
+.world__class__img img {
+  display: none;
 }
 
 .real__deal__img {
   background-image: url(../../assets/about/mobile/image-real-deal.jpg);
 }
 
-.about__hero__text__container {
-  background-image: url(../../assets/shared/desktop/bg-pattern-small-circle.svg);
-  background-repeat: no-repeat;
-  background-position: right -125px;
-  background-size: 75%;
+.real__deal__img img {
+  display: none;
 }
 
 .about__hero__text__container {
@@ -90,6 +95,7 @@
   .hero__accent {
     margin: 0 40px;
     border-radius: 15px;
+    border-top-right-radius: 15px;
   }
 
   .hero__primary {
@@ -100,12 +106,24 @@
     background-image: url(../../assets/about/tablet/image-about-hero.jpg);
   }
 
+  .about__img img {
+    display: none;
+  }
+
   .world__class__img {
     background-image: url(../../assets/about/tablet/image-world-class-talent.jpg);
   }
 
+  .world__class__img img {
+    display: none;
+  }
+
   .real__deal__img {
     background-image: url(../../assets/about/tablet/image-real-deal.jpg);
+  }
+
+  .real__deal__img img {
+    display: none;
   }
 
   .about__hero__text__wrapper {
@@ -125,5 +143,76 @@
   .about__heroimg__wrapper {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about__hero__container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .flex__reverse {
+    flex-direction: row-reverse;
+  }
+
+  .about__hero {
+    max-width: 1111px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .about__hero:last-child {
+    margin-top: 10rem;
+  }
+
+  .about__hero:first-child {
+    margin-bottom: 10rem;
+  }
+
+  .about__hero img {
+    display: block;
+  }
+
+  .about__img {
+    height: 100%;
+  }
+
+  .about__img img {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .about__heroimg__wrapper {
+    border-radius: 18px;
+  }
+
+  .world__class__img {
+    height: 100%;
+  }
+
+  .world__class__img img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .real__deal__img {
+    height: 100%;
+  }
+
+  .real__deal__img img {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .mb-7 {
+    margin-bottom: 0;
+  }
+
+  .companydesc__wrapper {
+    justify-content: space-between;
+    max-width: 1111px;
+    margin: 0 auto;
   }
 }
