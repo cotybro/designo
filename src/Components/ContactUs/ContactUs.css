@@ -94,6 +94,8 @@ textarea:focus {
     justify-content: space-between;
     align-items: center;
     padding: 3.4375rem 6rem;
+    max-width: 1111px;
+    margin: 0 auto;
   }
 
   .contact__text__container {
